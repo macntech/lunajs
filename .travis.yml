@@ -1,0 +1,15 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+node_js:
+  - "9"
+
+before_script:
+  - npm install
+
+notifications:
+  email:
+    - jo@macn.tech

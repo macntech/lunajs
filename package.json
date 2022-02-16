@@ -1,0 +1,27 @@
+{
+  "name": "lunajs",
+  "version": "1.0.0",
+  "description": "LunaJS is a lightweight library adding dark mode to your website",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macntech/lunajs.git"
+  },
+  "author": "Johannes Geisslinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macntech/lunajs/issues"
+  },
+  "homepage": "https://lunajs.org",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "sass": "^1.49.7"
+  }
+}
