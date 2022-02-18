@@ -18,7 +18,7 @@ function buildStyles() {
 
 // Create minified CSS for Release
 function minifyLunaCSS() {
-    return gulp.src('./src/js/*.js')
+    return gulp.src('./src/css/*.css')
         .pipe(minifycss())
         .pipe(rename('luna.min.css'))
         .pipe(gulp.dest('./dist'));
@@ -32,9 +32,6 @@ function minifyLunaJS() {
         .pipe(gulp.dest('./dist'));
 };
 
-//Create individual Tasks
-exports.buildStyles = buildStyles;
-exports.minifyLunaCSS = minifyLunaCSS;
 
 //Export task for final build
-exports.default = series(buildStyles, minifyLunaCSS);
+exports.default = series(buildStyles, minifyLunaCSS, minifyLunaJS);
